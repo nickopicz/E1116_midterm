@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { NumKey } from "../components/numKeys";
 import { OperKey } from "../components/opKeys";
 
-export const CalcScreen = (props) => {
+export const CalcScreen = ({ navigation }) => {
   const [display, setDisplay] = useState("");
   const [numer, setNumer] = useState("");
   const [denom, setDenom] = useState("");

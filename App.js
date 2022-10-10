@@ -1,8 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { CalcScreen } from "./screens/Calculator";
-import { NumKey } from "./components/numKeys";
+import React from "react";
+import { HomeStack } from "./navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function App() {
-  return <CalcScreen />;
+  return (
+    <NavigationContainer>
+      <HomeStack />
+    </NavigationContainer>
+  );
 }
