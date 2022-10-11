@@ -58,8 +58,7 @@ export const MapScreen = ({ navigation }) => {
           showsUserLocation={true}
         >
           <RoundedButton
-            text={"Current Location"}
-            color="blue"
+            text="Current Location"
             buttonStyle={styles.button}
             onPress={() => {
               _mapView.current?.animateToRegion(
@@ -92,14 +91,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   button: {
-    position: "absolute", //use absolute position to show button on top of the map
-    bottom: "20%", //for center align
-    alignItems: "flex-end", //for align to right
+    position: "absolute",
+    bottom: "10%",
+    alignItems: "center",
     backgroundColor: "#DDDDDD",
-    height: 35,
-    borderRadius: 20,
-    width: 150,
-    marginLeft: 190,
+    height: 120,
+    borderRadius: 60,
+    width: 120,
+    marginLeft: 240,
+    justifyContent: "center",
   },
   text: {
     alignSelf: "center",
